@@ -1,0 +1,56 @@
+<h1 class='center'>Robotaholics Anonymous!</h1>
+
+<button class='btn toggle-robots'>Add a New Robot</button>
+
+
+<div class="row">
+  <ul id="products">
+  </ul>
+</div>
+
+<!-- Add new robot -->
+<div class="row">
+    <form id='add_product' class="col s12 m8 offset-m2">
+      <div class="input-field">
+        Product: <input type="text" id='new_product_name'>
+        Base Price: <input type="text" id='new_base_price'>
+        Quantity on Hand: <input type="text" id='new_quantity'>
+        Color: <input type="text" id='new_color'>
+        Weight: <input type="text" id='new_weight'>
+        Other Attributes: <input type="text" id='new_other_attributes'>
+      </div>
+      <br />
+      <div class="row center">
+        <button class='btn add' type='button'>Submit</button>
+      </div>
+    </form>
+</div>
+
+
+
+<!-- Edit robot -->
+  <div class="row">
+    <form id="edit_product" class='hide col s12 m8 offset-m2'>
+      <div class="input-field">
+        Name: <input type="text" id='edit_name'>
+      </div>
+      <div class="input-field">
+        Base Price: <input type="text" id='edit_price'>
+      </div>
+      <div class="input-field">
+        Quantity: <input type="text" id='edit_quantity'>
+      </div>
+      <div class="input-field">
+        Color: <input type="text" id='edit_color'>
+      </div>
+      <div class="input-field">
+        Weight: <input type="text" id='edit_weight'>
+      </div>
+      <!-- <div class="input-field">
+        Serial #: <input type="text" id='edit_product_id'>
+      </div> -->
+      <div class="row center">
+        <button class='btn edit' type='button'>Submit</button>
+      </div>
+    </form>
+  </div>

@@ -1,0 +1,18 @@
+<div class='card'>
+    <div class='card-image waves-effect waves-block waves-light'>
+      <img class='activator' src='http://images.atelier.net/sites/default/files/imagecache/scale_crop_587_310/articles/421144/atelier-robot.jpg'>
+    </div>
+    <div class='card-content'>
+      <span class="card-title activator grey-text text-darken-4"><%= product[:name]%><i class='material-icons right blue-text'>info_outline</i></span>
+    </div>
+    <div class='card-reveal'>
+      <span class='card-title grey-text text-darken-4'><%= product[:name]%><i class='material-icons right'>close</i></span>
+      <p>Price: <span id='product-price'><%= product[:base_price]%></span></p>
+      <p>Quantity: <span id='product-quantity'><%= product[:quantity_on_hand]%></span></p>
+      <p>Color: <span id='product-color'><%= product[:color]%></span></p>
+      <p>Weight: <span id='product-weight'><%= product[:weight]%></span></p>
+      <p>Serial #: <span  id='product-id'><%= product[:id] %></span> </p>
+      <button class='btn' id='edit'>Edit</button>
+      <button class='btn delete-product'>Delete</button>
+    </div>
+  </div>
